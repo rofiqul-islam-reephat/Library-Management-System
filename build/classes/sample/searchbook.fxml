@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchbookController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="269.0" layoutX="-3.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="1031.0" />
+      <JFXButton fx:id="searchButton" layoutX="556.0" layoutY="167.0" prefHeight="40.0" prefWidth="157.0" style="-fx-background-color: #038387;" text="  Search " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/searchdsg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ChoiceBox fx:id="serachOption" layoutX="28.0" layoutY="169.0" prefHeight="40.0" prefWidth="170.0" />
+      <JFXButton fx:id="iamFeelingLuckyButton" layoutX="781.0" layoutY="165.0" prefHeight="45.0" prefWidth="219.0" style="-fx-background-color: #038387;" text="I am feeling Lucky" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="searchField" layoutX="247.0" layoutY="169.0" prefHeight="40.0" prefWidth="227.0" promptText="              keyword">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXScrollPane layoutX="-6.0" layoutY="260.0" prefHeight="377.0" prefWidth="1031.0">
+         <children>
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="isbn" prefWidth="135.3333282470703" text="ISBN" />
+                <TableColumn fx:id="bookname" minWidth="0.0" prefWidth="183.6666717529297" text="Book Name" />
+                  <TableColumn fx:id="author" minWidth="0.0" prefWidth="183.6666717529297" text="Author" />
+                  <TableColumn fx:id="subject" prefWidth="135.3333282470703" text="Subject " />
+                  <TableColumn fx:id="language" prefWidth="119.33331298828125" text="Language" />
+                  <TableColumn fx:id="publisher" prefWidth="125.66668701171875" text="Publisher" />
+                  <TableColumn fx:id="year" prefWidth="84.66668701171875" text="Year" />
+                  <TableColumn fx:id="quantity" prefWidth="61.33331298828125" text="Quantity" />
+              </columns>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+      <JFXButton fx:id="goBackButton" contentDisplay="TOP" layoutX="904.0" layoutY="29.0" onAction="#goBackButtonAction" prefHeight="63.0" prefWidth="96.0" style="-fx-background-color: #038387;" text="Go Back">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@media/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="117.0" fitWidth="110.0" layoutX="48.0" layoutY="14.0">
+         <image>
+            <Image url="@media/management-library-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="392.0" layoutY="43.0" prefHeight="59.0" prefWidth="243.0" text="Search Books">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

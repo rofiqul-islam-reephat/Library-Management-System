@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddmemberController">
+   <children>
+      <VBox layoutX="221.0" layoutY="82.0" prefHeight="470.0" prefWidth="364.0">
+         <children>
+            <JFXTextField fx:id="userNameField" focusColor="#757171" prefHeight="57.0" prefWidth="400.0" promptText="       User Name ( Not more than 16 Characters)" unFocusColor="BLACK">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="fullNameField" prefHeight="57.0" prefWidth="366.0" promptText="        full name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="passwordField" prefHeight="57.0" prefWidth="366.0" promptText="        password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="idField" prefHeight="57.0" prefWidth="400.0" promptText="         Id " unFocusColor="#222020">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="depField" prefHeight="57.0" prefWidth="400.0" promptText="         Department">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="secField" prefHeight="57.0" prefWidth="400.0" promptText="         Section">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="yearField" prefHeight="57.0" prefWidth="400.0" promptText="         Year">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="semField" prefHeight="57.0" prefWidth="400.0" promptText="         Semester">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="emailField" prefHeight="57.0" prefWidth="400.0" promptText="         Email">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="mobileField" prefHeight="57.0" prefWidth="400.0" promptText="         Mobile">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="seqQuesField" prefHeight="57.0" prefWidth="366.0" promptText="       Security Question">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="answerField" prefHeight="57.0" prefWidth="366.0" promptText="       Answer">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <JFXButton fx:id="confirmButton" layoutX="134.0" layoutY="562.0" onAction="#CofirmButtonAction" prefHeight="19.0" prefWidth="113.0" style="-fx-background-color: #009688;" text="Confirm" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cancelButton" layoutX="390.0" layoutY="562.0" onAction="#CloseButtonAction" prefHeight="13.0" prefWidth="104.0" style="-fx-background-color: #009688;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Label prefHeight="60.0" prefWidth="614.0" style="-fx-background-color: #009688;" text="                             Add Member Information" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <VBox layoutX="25.0" layoutY="82.0" prefHeight="470.0" prefWidth="182.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          User Name ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          Full  Name ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          User Id">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="           Department">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          Section ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          Year">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          Semester">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          Email">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          Mobile">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          Security Question">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="183.0" text="          Answer">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

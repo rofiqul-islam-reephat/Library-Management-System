@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1024.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BookdatabaseController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#038387" height="126.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="1032.0" />
+      <JFXScrollPane layoutY="126.0" prefHeight="515.0" prefWidth="1024.0">
+         <children>
+            <TableView fx:id="bookdataTable" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #bdc3c7;">
+              <columns>
+                <TableColumn fx:id="isbn" prefWidth="110.0" text="ISBN" />
+                <TableColumn fx:id="bookname" minWidth="0.0" prefWidth="207.0" text="Book Name" />
+                  <TableColumn fx:id="author" minWidth="0.0" prefWidth="185.0" text="Author Name" />
+                  <TableColumn fx:id="subject" prefWidth="159.0" text="Subject" />
+                  <TableColumn fx:id="language" prefWidth="97.0" text="Language" />
+                  <TableColumn fx:id="year" prefWidth="67.0" text="Year" />
+                  <TableColumn fx:id="publisher" prefWidth="112.0" text="Publisher" />
+                  <TableColumn fx:id="quantity" prefWidth="77.0" text="Quantity" />
+              </columns>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+      <JFXButton fx:id="goBackButton" contentDisplay="TOP" layoutX="906.0" layoutY="28.0" onAction="#goBackAction" onDragDetected="#goBackAction" prefHeight="69.0" prefWidth="89.0" style="-fx-background-color: #515C6B;" text="Go Back" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@media/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="101.0" fitWidth="99.0" layoutX="14.0" layoutY="13.0">
+         <image>
+            <Image url="@media/open-book.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="380.0" layoutY="35.0" prefHeight="57.0" prefWidth="221.0" text="Book Database" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

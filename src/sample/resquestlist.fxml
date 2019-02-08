@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.requestListController">
+   <children>
+      <JFXScrollPane layoutX="-1.0" layoutY="137.0" prefHeight="515.0" prefWidth="1024.0">
+         <children>
+            <TableView fx:id="bookdataTable" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #bdc3c7;">
+               <columns>
+                  <TableColumn fx:id="isbn" prefWidth="110.0" text="ISBN" />
+                  <TableColumn fx:id="bookname" minWidth="0.0" prefWidth="199.0" text="Book Name" />
+                  <TableColumn fx:id="author" minWidth="0.0" prefWidth="177.0" text="Author Name" />
+                  <TableColumn fx:id="subject" prefWidth="175.0" text="Subject" />
+                  <TableColumn fx:id="language" prefWidth="97.0" text="Language" />
+                  <TableColumn fx:id="year" prefWidth="107.0" text="Year" />
+                  <TableColumn fx:id="publisher" prefWidth="158.0" text="Publisher" />
+               </columns>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#038387" height="141.0" layoutX="-2.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="1029.0" />
+      <Label layoutX="395.0" layoutY="40.0" prefHeight="62.0" prefWidth="188.0" text="Requests" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="goBackButton" contentDisplay="TOP" layoutX="902.0" layoutY="32.0" onAction="#goBackButtonAction" prefHeight="69.0" prefWidth="89.0" style="-fx-background-color: #515C6B;" text="Go Back" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@media/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="106.0" fitWidth="104.0" layoutX="24.0" layoutY="9.0">
+         <image>
+            <Image url="@media/contact_icon1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
